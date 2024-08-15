@@ -1,0 +1,155 @@
+.footer-container {
+  background-color: #ffffff; /* White background */
+  padding: 40px 20px;
+  text-align: center;
+  border-top: 1px solid #e0e0e0;
+  font-family: Arial, sans-serif;
+  padding: 5px 5px 5px 5px;
+}
+
+.footer-container {
+  background-color: #f8f9fa;
+  padding: 20px;
+  text-align: center;
+}
+
+.subscription-section {
+  margin-bottom: 30px;
+}
+
+.subscription-section h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.subscription-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.subscription-form input {
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 50px; /* Rounded input */
+  width: 300px;
+  outline: none;
+}
+
+.subscription-form button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50px; /* Rounded button */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.subscription-form button:hover {
+  background-color: #0056b3;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.footer-links a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #007bff;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.social-icons a {
+  color: #000;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #007bff;
+}
+
+.footer-bottom {
+  border-top: 1px solid #e0e0e0;
+  padding-top: 10px;
+  color: #666;
+}
+
+.footer-bottom p,
+.footer-bottom a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #666;
+  transition: color 0.3s ease;
+}
+
+.footer-bottom a:hover {
+  color: #007bff;
+}
+
+.can-join-on {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f7f9fc;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  position: relative; /* Allows for positioning of child elements */
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: -30px; /* Negative margin to move the icons down */
+  position: relative; /* Ensure icons stay within their container */
+  z-index: 2; /* Ensure icons are above the blue border */
+}
+
+.icon {
+  width: 160px;
+  height: 70px;
+  transition: transform 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+}
+
+.blue-border {
+  width: 100%;
+  height: 40px;
+  border: 2px solid #007bff;
+  border-radius: 12px 12px 0 0;
+  background-color: #007bff;
+  position: relative;
+  clip-path: polygon(
+    0 0,       /* Top-left corner */
+    100% 0,    /* Top-right corner */
+    100% 85%,  /* Right-bottom cut point */
+    50% 100%,  /* Bottom-center tip of the triangle */
+    0 85%      /* Left-bottom cut point */
+  );
+  z-index: 1; /* Ensures blue border is below the icons */
+}

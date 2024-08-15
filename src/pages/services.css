@@ -1,0 +1,105 @@
+/* services.css */
+
+.servicesSection {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    position: relative; /* Ensure circles are positioned relative to this section */
+    overflow: hidden; /* Prevent circles from overflowing */
+  }
+  
+  .servicesHeader {
+    margin-bottom: 40px;
+    position: relative; /* Ensure this section is above the circles */
+    z-index: 1; /* Ensure this content is above the circles */
+  }
+  
+  .ourServices {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 0.5rem;
+  }
+  
+  .servicesDescription {
+    font-family: 'Roboto Slab', serif; /* Use the niche font */
+    font-weight: bold; /* Make the text bold */
+    margin: 20px 0; /* Top and bottom margin of 20px */
+    padding: 10px; /* Padding of 10px on all sides */
+    line-height: 1.6; /* Line height for readability */
+    color: #333; /* Dark gray text color for better readability */
+    text-align: center; /* Center align the text */
+  }
+  
+  .knowMoreButton {
+    font-size: 1rem;
+    color: #007bff;
+    border: 2px solid #007bff;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .knowMoreButton:hover {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .servicesGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .serviceCard {
+    background-color: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+    padding: 20px;
+    width: 150px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .serviceCard:hover {
+    transform: scale(1.05);
+  }
+  
+  .serviceIcon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .serviceTitle {
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
+  /* Background circles */
+  .backgroundCircle1, .backgroundCircle2 {
+      position: absolute;
+      border-radius: 50%;
+      z-index: -1; /* Place behind other content */
+  }
+  
+  .backgroundCircle1 {
+      width: 300px;
+      height: 300px;
+      background: linear-gradient(circle, #C4F2FF 0%, #C7DDFF 100%);
+      top: 10%; /* Adjust positioning as needed */
+      left: -50px; /* Adjust positioning as needed */
+      opacity: 0.5;
+  }
+  
+  .backgroundCircle2 {
+      width: 400px;
+      height: 400px;
+      background: linear-gradient(circle, #FFDED2 0%, #C7DDFF 100%);
+      bottom: -50px; /* Adjust positioning as needed */
+      right: -50px; /* Adjust positioning as needed */
+      opacity: 0.5;
+  }
+  

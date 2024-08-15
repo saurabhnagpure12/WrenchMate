@@ -1,0 +1,164 @@
+.contact-page {
+  
+  display: flex;
+  flex-direction: column; /* Stack items vertically for better centering */
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
+  gap: 20px; /* Adjust gap between items */
+  border-radius: 10px;
+  padding: 25px;
+  width: 100%;
+  max-width: 800px; /* Adjust width for responsiveness */
+  background-color: #3477F4;
+  margin: 0 auto; /* Center the entire page */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); 
+}
+
+
+
+.contact-info,
+.contact-form {
+
+  border-radius: 10px;
+  /* Rounded corners for both sections */
+
+  height: fit-content;
+  flex: 1;
+  margin: 2px 2px 2px 2px;
+  padding: 5px 5px 5px 5px;
+
+  margin-bottom: 20px;
+
+  max-width: 80%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+
+}
+
+.contact-info h2,
+.contact-info p,
+.info-item {
+  text-align: center;
+  /* Center the text */
+}
+
+.tire {
+  width: 350px;
+  /* Adjust image width as needed */
+  height: 160px;
+  /* Maintain aspect ratio */
+  left: 50px;
+  /* margin-top: 20px; Space between the content and the image */
+}
+
+.contact-info {
+  color: white;
+  margin-left: auto;
+
+}
+
+.contact-form {
+  color: white;
+  margin-right: auto;
+  border: 2px solid #ccc;
+
+}
+
+.contact-info h2,
+.contact-form h2 {
+  font-size: 24px;
+  color: white;
+  align-items: left;
+  margin-bottom: 15px;
+}
+
+
+
+.info-item {
+  margin: 10px 0;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.info-item span {
+  margin-right: 10px;
+  /* Space between icon and text */
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 15px;
+  /* Increased padding for better user experience */
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.contact-form textarea {
+  min-height: 150px;
+  /* Ensures the textarea is larger */
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  background-color: #3477F4;
+  /* Blue background for the button */
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  /* Smooth transition for hover effect */
+}
+
+.contact-form button:hover {
+  background-color: #285bb5;
+  /* Darker blue on hover */
+}
+
+/* Media Queries for Responsiveness */
+@media (min-width: 768px) {
+  .contact-page {
+    flex-direction: row;
+    /* Align items horizontally on tablets and larger screens */
+    justify-content: space-between;
+    /* Space out the sections */
+    align-items: flex-start;
+  }
+
+  .contact-info,
+  .contact-form {
+    /* width: 48%;  */
+    /* Set both sections to 48% width for side-by-side layout */
+    margin-bottom: 0;
+    /* Remove bottom margin on larger screens */
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .contact-info,
+  .contact-form {
+    /* width: 45%;  */
+    padding: 30px;
+  }
+
+  .contact-info h2,
+  .contact-form h2 {
+    font-size: 28px;
+    /* Increase font size for headings on large screens */
+  }
+
+  .contact-info p {
+    font-size: 20px;
+    /* Increase font size for paragraphs on large screens */
+  }
+}

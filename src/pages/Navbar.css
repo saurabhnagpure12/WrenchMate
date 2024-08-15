@@ -1,0 +1,86 @@
+/* Navbar.css */
+
+.navbarParent {
+  background-color: #3477F4;
+  padding: 10px 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.wrenchmateWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.wrenchmate {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.whiteText {
+  color: rgb(215, 207, 207);
+}
+
+.blackText {
+  color: rgb(12, 10, 10);
+  text-decoration: none;
+}
+
+
+.navItems {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.navItem a {
+  color: rgb(246, 244, 244);
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.navItem a:hover {
+  color: #ffeb3b; /* Highlight color on hover */
+}
+
+.navItem1, .navItem3, .navItemWrapper, .navItem9 {
+  display: flex;
+  align-items: center;
+  color: rgb(246, 244, 244);
+  text-decoration: none;
+}
+
+.navItem2, .navItem5, .navItem8, .navItem11 {
+  padding: 10px 15px;
+  color: rgb(246, 244, 244);
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navItem2:hover, .navItem5:hover, .navItem8:hover, .navItem11:hover {
+  background-color: #295bba;
+  color: white;
+}
+
+.navItem11 {
+  background-color: white;
+  color: #3477F4;
+  text-decoration: none;
+}
+
+.navItem11:hover {
+  background-color: #295bba;
+  color: white;
+}
+
+.navItem4, .navItem6, .navItem10 {
+  display: flex;
+  align-items: center;
+}

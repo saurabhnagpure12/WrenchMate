@@ -1,0 +1,20 @@
+.aboutSection {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #ffffff; /* Adjust the background color if needed */
+  }
+  
+  .aboutHeader {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 1rem;
+  }
+  
+  .aboutDescription {
+    font-size: 1rem;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+ 
