@@ -14,8 +14,10 @@ const TopComponent = () => {
               Worried with your car servicing and maintenance ???
             </div>
             <div className="connectWithUsWrapper">
-              <button className="connectWithUsButton">
-                CONNECT ON WHAT'S APP
+            <button 
+  className="connectWithUsButton" 
+  onClick={() => window.location.href = "https://wa.me/7386565050"}
+>    CONNECT ON WHAT'S APP
                 <span className="arrowIcon">➔</span>
               </button>
             </div>
