@@ -190,3 +190,53 @@
     text-align: center;
   }
 }
+/* Mobile-specific styles */
+@media screen and (max-width: 576px) {
+  .heroContentWrapper {
+    padding: 10px;
+  }
+
+  .heroContent {
+    align-items: center;
+  }
+
+  .sitBackAnd {
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 1.2;
+  }
+
+  .worriedWithCar {
+    font-size: 0.875rem;
+    text-align: center;
+  }
+
+  .connectWithUsButton {
+    font-size: 0.875rem;
+    padding: 8px 16px;
+  }
+
+  .arrowIcon {
+    font-size: 1rem;
+  }
+
+  .imageWrapper {
+    margin-top: 20px;
+  }
+
+  .phoneImage {
+    max-width: 80%;
+    height: auto;
+  }
+
+  .heroParagraphsWrapper {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .heroParagraphs {
+    max-width: 100%;
+    text-align: center;
+  }
+}

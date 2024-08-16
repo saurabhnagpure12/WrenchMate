@@ -25,6 +25,7 @@ export default function Footer() {
         <a href="/term">Terms of Service</a>
         <a href="/privacy">Privacy Policy</a>
       </div>
+      <div className="can-join-on"></div>
     </footer>
   );
 }

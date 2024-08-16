@@ -6,54 +6,44 @@ const Navbar = () => {
   return (
     <section className="navbarParent">
       <header className="navbar">
-        <div className="wrenchmateWrapper">
-          <div className="wrenchmate">
-            <span className="whiteText">W</span>
-            <span className="blackText">rench</span>
-            <span className="whiteText">M</span>
-            <span className="blackText">ate</span>
-          </div>
+        <div className="navItem">
+          <img src="./logo.png" alt="Logo" className="logo" />
         </div>
-        <div className="yourLogo" />
+
         <div className="navItems">
           <div className="navItem">
-            <div className="navItem1">
-              <Link
-                to="about"
-                smooth={true}
-                duration={500}
-                offset={-70} // Adjust offset if you have a fixed header
-                className="navItem2"
-              >
-                About us
-              </Link>
-            </div>
+            <Link
+              to="about"
+              smooth={true}
+              duration={500}
+              offset={-70}
+              className="navItem2"
+            >
+              About us
+            </Link>
           </div>
-          <div className="navItem3">
-            <div className="navItem4">
-              <Link
-                to="services"
-                smooth={true}
-                duration={500}
-                offset={-70} // Adjust offset if you have a fixed header
-                className="navItem5"
-              >
-                Service
-              </Link>
-            </div>
+          <div className="navItem">
+            <Link
+              to="services"
+              smooth={true}
+              duration={500}
+              offset={-70}
+              className="navItem5"
+            >
+              Service
+            </Link>
           </div>
-          <div className="navItem9">
-            <div className="navItem10">
-              <Link
-                to="contact"
-                smooth={true}
-                duration={500}
-                offset={-70} // Adjust offset if you have a fixed header
-                className="navItem11"
-              >
-                Contact
-              </Link>
-            </div>
+          <div className="navItem">
+            <Link
+              to="contact"
+              
+              smooth={true}
+              duration={500}
+              offset={-70}
+              className="navItem11 blue"
+            >
+              Contact
+            </Link>
           </div>
         </div>
       </header>

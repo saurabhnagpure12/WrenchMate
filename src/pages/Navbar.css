@@ -3,6 +3,8 @@
 .navbarParent {
   background-color: #3477F4;
   padding: 10px 20px;
+  width: 100%; /* Ensure the navbarParent spans the full width */
+  box-sizing: border-box;
 }
 
 .navbar {
@@ -12,33 +14,18 @@
   flex-wrap: wrap;
 }
 
-.wrenchmateWrapper {
-  display: flex;
-  align-items: center;
-}
-
-.wrenchmate {
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.whiteText {
-  color: rgb(215, 207, 207);
-}
-
-.blackText {
-  color: rgb(12, 10, 10);
-  text-decoration: none;
-}
-
-
 .navItems {
   display: flex;
   gap: 20px;
-  flex-wrap: wrap;
+  align-items: center; /* Ensure alignment */
 }
 
-.navItem a {
+.logo {
+  max-height: 100px; /* Default size for logo */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.navItem  {
   color: rgb(246, 244, 244);
   text-decoration: none;
   font-size: 16px;
@@ -49,14 +36,7 @@
   color: #ffeb3b; /* Highlight color on hover */
 }
 
-.navItem1, .navItem3, .navItemWrapper, .navItem9 {
-  display: flex;
-  align-items: center;
-  color: rgb(246, 244, 244);
-  text-decoration: none;
-}
-
-.navItem2, .navItem5, .navItem8, .navItem11 {
+.navItem2, .navItem5 {
   padding: 10px 15px;
   color: rgb(246, 244, 244);
   border-radius: 5px;
@@ -64,23 +44,46 @@
   transition: background-color 0.3s, color 0.3s;
 }
 
-.navItem2:hover, .navItem5:hover, .navItem8:hover, .navItem11:hover {
+.navItem2:hover, .navItem5:hover {
   background-color: #295bba;
   color: white;
 }
 
 .navItem11 {
-  background-color: white;
-  color: #3477F4;
+  padding: 10px 15px;
+  color: #3477F4; /* Blue color for Contact link */
+  background-color: white; /* White background for Contact link */
+  border-radius: 5px;
   text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .navItem11:hover {
-  background-color: #295bba;
-  color: white;
+  background-color: #295bba; /* Darker blue background on hover */
+  color: white; /* White text color on hover */
 }
 
-.navItem4, .navItem6, .navItem10 {
-  display: flex;
-  align-items: center;
+/* Mobile-specific styles */
+@media screen and (max-width: 576px) {
+  .navbar {
+    flex-direction: row;
+    align-items: center; /* Keep the same alignment for mobile */
+    padding: 10px 10px; /* Adjust padding for mobile */
+  }
+
+  .navItems {
+    flex-direction: row;
+    width: auto; /* Auto width for better alignment */
+    gap: 10px;
+    align-items: center;
+  }
+
+  .logo {
+    max-height: 40px; /* Reduce logo size for mobile */
+  }
+
+  .navItem a {
+    font-size: 14px; /* Smaller font size for mobile */
+    padding: 8px 12px; /* Adjust padding for mobile */
+  }
 }

@@ -17,7 +17,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 1rem; /* Decreased gap */
+    /* gap: 1rem; Decreased gap */
 }
 
 .feature.reverse {
@@ -27,7 +27,7 @@
 .feature-image,
 .feature-text {
     flex: 1;
-    max-width: 50%;
+    max-width: 90%;
 }
 
 .feature-image img {
@@ -103,4 +103,70 @@
     background: linear-gradient(45deg, #d0d0d0, #d53f3f); /* Lightest Grey */
     top: 60%;
     right: 1.5%;
+}
+
+/* Mobile-specific styles for ServiceFeatures */
+@media (max-width: 768px) {
+    .service-features {
+        padding: 1rem; /* Reduced padding for mobile */
+    }
+
+    .service-features h1 {
+        font-size: 2rem; /* Slightly smaller font size for mobile */
+        margin-bottom: 1rem; /* Reduced margin for mobile */
+    }
+
+    .feature {
+        flex-direction: column;
+        align-items: center; /* Center items horizontally on mobile */
+        text-align: center; /* Center text */
+        gap: 1.5rem; /* Increased gap for better spacing */
+    }
+
+    .feature-image {
+        max-width:90%; /* Increase image width on mobile */
+    }
+
+    .feature-image img {
+        max-width: 100%; /* Ensure images fill their container */
+        max-height: none; /* Remove max-height to allow larger images */
+    }
+
+    .feature-text {
+        text-align: center; /* Center text on mobile */
+        padding: 0 1rem; /* Add padding for better spacing */
+    }
+
+    .feature-text h3 {
+        font-size: 1.5rem; /* Slightly smaller font size for mobile */
+        margin-bottom: 1rem; /* Adjust margin */
+    }
+
+    .feature-text p {
+        font-size: 1.2rem; /* Smaller font size for mobile */
+        line-height: 1.5;
+        font-weight: 600; /* Adjust line-height for readability */
+    }
+
+    /* Adjust circles to be smaller and better positioned on mobile */
+    .circle1 {
+        width: 200px;
+        height: 200px;
+        top: 20%;
+        right: 10%;
+    }
+
+    .circle2 {
+        width: 250px;
+        height: 250px;
+        top: 25%;
+        right: 70%;
+    }
+
+    .circle3 {
+        width: 200px;
+        height: 200px;
+        top: 40%;
+        right: 5%;
+    }
 }
