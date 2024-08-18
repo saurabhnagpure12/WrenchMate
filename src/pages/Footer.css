@@ -157,7 +157,7 @@
 
   .can-join-on {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     padding: 10px; /* Adjust padding for mobile */
     background-color: #f7f9fc;
@@ -170,7 +170,7 @@
 
   .icon-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     gap: 10px; /* Space between icons */
     margin-bottom: 20px; /* Space below the icons */
@@ -199,7 +199,7 @@
 
   .footer-links {
     display: flex;
-    flex-direction: column; /* Stack links vertically */
+    flex-direction: row; /* Stack links vertically */
     align-items: center;
     gap: 15px; /* Space between links */
     margin: 20px 20px 20px 20px; /* Space below links */
