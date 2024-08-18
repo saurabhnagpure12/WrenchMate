@@ -12,7 +12,8 @@
 
 .footer-links {
   display: flex;
-  flex-direction: column; /* Stack links vertically on mobile */
+  justify-content: center;
+  flex-direction: row; /* Stack links vertically on mobile */
   gap: 10px; /* Increased gap between links */
   margin-bottom: 20px;
 }
@@ -28,10 +29,36 @@
 .footer-links a:hover {
   color: #007bff;
 }
+.footer-bottom {
+  padding: 20px  20px 20px 20px; /* Add padding around the content */
+  margin-top: 20px;
+   /* Add margin to separate it from content above */
+  text-align: center;
+  font-weight: 300; /* Center-align the content */
+  background-color: #f9f9f9; /* Optional: add a background color */
+}
+
+.footer-bottom p {
+  font-weight: bold; /* Make the text bold */
+  margin: 0; /* Remove default margin */
+  padding: 5px 0; /* Add padding for spacing */
+}
+
+.footer-bottom a {
+  font-weight: bold; /* Make the text bold */
+  margin: 0 10px; /* Add horizontal margin between the links */
+  padding: 5px 0; /* Add padding for spacing */
+  color: #007bff; /* Optional: set link color */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
 
 .social-icons {
   display: flex;
-  flex-direction: column; /* Stack social icons vertically on mobile */
+  flex-direction: row; /* Stack social icons vertically on mobile */
   gap: 10px; /* Increased gap between social icons */
   margin-bottom: 30px;
 }
@@ -81,7 +108,7 @@
 
 .icon-container {
   display: flex;
-  flex-direction: column; /* Stack icons vertically on mobile */
+  flex-direction: row; /* Stack icons vertically on mobile */
   align-items: center;
   gap: 10px;
   margin-bottom: -30px; /* Negative margin to move the icons down */
@@ -130,7 +157,7 @@
 
   .can-join-on {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     padding: 10px; /* Adjust padding for mobile */
     background-color: #f7f9fc;
@@ -143,7 +170,7 @@
 
   .icon-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     gap: 10px; /* Space between icons */
     margin-bottom: 20px; /* Space below the icons */
@@ -172,7 +199,7 @@
 
   .footer-links {
     display: flex;
-    flex-direction: row; /* Stack links vertically */
+    flex-direction: column; /* Stack links vertically */
     align-items: center;
     gap: 15px; /* Space between links */
     margin: 20px 20px 20px 20px; /* Space below links */

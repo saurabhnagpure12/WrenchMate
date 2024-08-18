@@ -1,23 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-scroll";
 import "./Navbar.css";
 
 const Navbar = () => {
+  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!isMobileMenuOpen);
+  };
+
   return (
     <section className="navbarParent">
       <header className="navbar">
-        <div className="navItem">
+        <div className="logoContainer">
           <img src="./logo.png" alt="Logo" className="logo" />
         </div>
 
-        <div className="navItems">
+        <div className={`navItemsContainer ${isMobileMenuOpen ? 'open' : ''}`}>
           <div className="navItem">
             <Link
               to="about"
               smooth={true}
+              className="link"
               duration={500}
               offset={-70}
-              className="navItem2"
+              onClick={() => setMobileMenuOpen(false)}
             >
               About us
             </Link>
@@ -25,10 +32,11 @@ const Navbar = () => {
           <div className="navItem">
             <Link
               to="services"
+               className="link"
               smooth={true}
               duration={500}
               offset={-70}
-              className="navItem5"
+              onClick={() => setMobileMenuOpen(false)}
             >
               Service
             </Link>
@@ -36,15 +44,21 @@ const Navbar = () => {
           <div className="navItem">
             <Link
               to="contact"
-              
               smooth={true}
               duration={500}
+                 className="link"
               offset={-70}
-              className="navItem11 blue"
+              onClick={() => setMobileMenuOpen(false)}
             >
               Contact
             </Link>
           </div>
+        </div>
+
+        <div className="mobileMenuToggle">
+          <button onClick={toggleMobileMenu} className="mobileMenuButton">
+            ☰
+          </button>
         </div>
       </header>
     </section>

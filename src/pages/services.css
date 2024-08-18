@@ -1,6 +1,9 @@
 .servicesSection {
   text-align: center;
   padding: 40px 20px;
+  width: 100%;
+  /* border: 1px solid ; */
+ 
   background-color: #f9f9f9;
   position: relative; /* Ensure circles are positioned relative to this section */
   overflow: hidden; /* Prevent circles from overflowing */
@@ -8,14 +11,15 @@
 
 .servicesHeader {
   margin-bottom: 40px;
-  position: relative; /* Ensure this section is above the circles */
-  z-index: 1; /* Ensure this content is above the circles */
-}
+  position: relative; 
+    z-index: 1;
+   }
 
 .ourServices {
   font-size: 2rem;
   color: #007bff;
   margin-bottom: 0.5rem;
+  width: 100%;
 }
 
 .servicesDescription {
@@ -26,8 +30,8 @@
   line-height: 1.6; /* Line height for readability */
   color: #333; /* Dark gray text color for better readability */
   text-align: center; /* Center align the text */
+    width: 100%;
 }
-
 .knowMoreButton {
   font-size: 1rem;
   color: #007bff;
@@ -44,43 +48,47 @@
   color: #fff;
 }
 
-.servicesGrid {
-  display: flex;
+.servicesGrids {
+  display: flex; 
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 2px 2px 2px 2px;
+  /* border: 1px solid ; */
+  width: 100%;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  align-items: center;
 }
 
-.phoneImage {
-  width: 100%; /* Ensure image takes full width of its container */
-  max-width: 500px; /* Adjust max width as needed */
-  height: auto; /* Maintain aspect ratio */
-  margin-top: 20px; /* Space above the image */
-}
-
-.serviceCard {
-  background-color: #fff;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  padding: 20px;
-  width: 150px;
-  text-align: center;
-  transition: transform 0.3s ease;
-}
 
 .serviceCard:hover {
   transform: scale(1.05);
 }
 
 .serviceIcon {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   margin-bottom: 10px;
 }
+
+.servicecard {
+  width: 180px;
+  height: 240px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Add transition for smooth effect */
+}
+
+.servicecard:hover {
+  transform: scale(1.05);
+  background-color: #f0f0f0; /* Optional: change background color on hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Add shadow on hover */
+}
+
 
 .serviceTitle {
   font-size: 1.1rem;
   color: #333;
+  width: 100%;
 }
 
 /* Background circles */
@@ -108,51 +116,4 @@
   opacity: 0.5;
 }
 
-/* Responsive Styles */
-@media (max-width: 767px) {
-  .servicesSection {
-    padding: 20px;
-  }
 
-  .ourServices {
-    font-size: 1.5rem;
-  }
-
-  .servicesDescription {
-    font-size: 1rem;
-    margin: 15px 0;
-    padding: 5px;
-  }
-
-  .knowMoreButton {
-    font-size: 0.9rem;
-    padding: 8px 16px;
-  }
-
-  .phoneImage {
-    width: 100%;
-    height: 9cqb;
-    max-width: 300px; /* Limit image width for mobile */
-    margin-top: 20px; /* Space above the image */
-  }
-
-  .serviceCard {
-    width: 100px;
-    padding: 15px;
-  }
-
-  .serviceIcon {
-    width: 40px;
-    height: 40px;
-  }
-
-  .serviceTitle {
-    font-size: 1rem;
-  }
-
-  .backgroundCircle1,
-  .backgroundCircle2 {
-    width: 200px;
-    height: 200px;
-  }
-}

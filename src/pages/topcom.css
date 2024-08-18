@@ -1,3 +1,4 @@
+/* General Styles */
 .heroContentWrapper {
   display: flex;
   flex-direction: column;
@@ -75,106 +76,18 @@
   justify-content: center;
 }
 
-.phoneImage {
-  max-width: 100%;
-  height: auto;
-}
 
-.servicesContentParent {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-}
 
-.servicesContent {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  padding: 20px 0;
-}
-
-.servicesLeft {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.servicesLeftContent {
-  max-width: 600px;
-}
-
-.frameParent {
-  display: flex;
-  flex-direction: column;
-}
-
-.ourServicesWrapper {
-  margin-bottom: 1rem;
-}
-
-.ourServices {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.loremIpsumDolor1 {
-  font-size: 1rem;
-  color: #666;
-}
-
-.servicesImage {
-  width: 300px;
-  height: 200px;
-  background-color: #eaeaea;
-  margin-top: 1rem;
-}
-
-.aWrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.a {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.knowMore {
-  font-size: 1rem;
-  font-weight: bold;
-}
-
-.frameChild {
-  width: 100%;
-  height: 2px;
-  background-color: #eaeaea;
-  margin-top: 1.5rem;
-}
 /* Responsive Design */
 @media screen and (max-width: 1200px) {
   .sitBackAnd {
     font-size: 2.5rem;
   }
+
+  
+
 }
 
-@media screen and (max-width: 992px) {
-  .sitBackAnd {
-    font-size: 2rem;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .sitBackAnd {
-    font-size: 1.75rem;
-  }
-}
 
 @media screen and (max-width: 576px) {
   .sitBackAnd {
@@ -189,7 +102,10 @@
   .heroParagraphs {
     text-align: center;
   }
+
+
 }
+
 /* Mobile-specific styles */
 @media screen and (max-width: 576px) {
   .heroContentWrapper {
@@ -220,14 +136,7 @@
     font-size: 1rem;
   }
 
-  .imageWrapper {
-    margin-top: 20px;
-  }
-
-  .phoneImage {
-    max-width: 80%;
-    height: auto;
-  }
+ 
 
   .heroParagraphsWrapper {
     flex-direction: column;

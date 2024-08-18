@@ -22,8 +22,8 @@ export default function Footer() {
      
       <div className="footer-bottom">
         <p>&copy; 2024 Wrenchmate. All rights reserved.</p>
-        <a href="/term">Terms of Service</a>
-        <a href="/privacy">Privacy Policy</a>
+        <a href="/term">Terms of Service  .</a>
+        <a href="/privacy">.  Privacy Policy</a>
       </div>
       <div className="can-join-on"></div>
     </footer>
