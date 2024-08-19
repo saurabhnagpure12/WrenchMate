@@ -23,7 +23,7 @@ const LeadershipTeam = () => {
               <img src="./Group332.png"></img>
               </div>
               <div className="box">
-              <img src="./Group332.png"></img>
+              <img src="./Group333.png"></img>
               
               </div>
             </div>
